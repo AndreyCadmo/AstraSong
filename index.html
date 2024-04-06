@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head> <!-- Cabeça do Site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstraSong</title>
+    <link rel="stylesheet" href="style.css"> <!-- Adicionando Style Externo -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon"> <!-- Adicionando Icon a Pagina-->
+
+    <!-- Modificando a fonte FONT TIPO 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body> <!-- Corpo do Site -->
+    <main> <!-- Conteudo Principal da Página-->
+
+        <section class="intro"> <!-- Criando uma seção para o Inicio da Página -->
+
+            <div class="about"> <!-- Falando um pouco sobre o Site -->
+                <h1><cite>AstraSong</cite> (beta)</h1> <!-- Nome do Site -->
+                <h2>
+                    Bem-vindo ao AstraSong, onde a música se encontra com o cosmos em uma experiência sonora única.
+                    Explore os mistérios do universo enquanto se envolve com uma vasta e eclética seleção de melodias
+                    celestiais. De clássicos intemporais a batidas intergalácticas, nossa plataforma é o seu portal para
+                    uma jornada musical que transcende fronteiras terrenas. Junte-se a nós e deixe-se levar pela magia
+                    da música astronáutica. <q>Embarque</q> em uma aventura sonora que o levará a novos horizontes
+                    cósmicos,
+                    onde cada nota é uma estrela e cada ritmo é uma galáxia esperando para ser descoberta.</h2> <!-- Descrição sobre o Site -->
+                <br> <!-- quebra de Linha -->
+                <h3><strong><em>AstraSong:</em></strong> Explore, Descubra, Celebre.</h3> <!-- Um legado do site -->
+            </div>
+            <div>
+                <img src="./assets/logo.png" alt=""> <!-- Imagem de Saturno Também usada como LOGO -->
+            </div>
+        </section>
+
+        <section class="artistics-content"> <!-- Criando a Seção dos "Artistas/musicas" astronauticas -->
+
+            <fieldset> <!--criando um conjunto de campos -->
+                <legend class="demo"><cite>DEMONSTRAÇÃO</cite></legend> <!-- Adicionando uma legenda a o conjunto-->
+                <div class="artistics"> <!-- Criando a Divisão pros Cards -->
+
+                    <div class="card"> <!-- Criando a Divisão pro Card -->
+                        <img src="https://img.freepik.com/fotos-gratis/o-ceu-noturno-brilha-com-iridescente-ia-generativa-do-espaco-profundo_188544-11285.jpg"
+                            alt=""> <!-- Adicionando uma Imagem -->
+                        <audio src="./musics/pandora.mp3" id="musica1"></audio> <!-- Criando um audio -->
+                        <label for="">Clemens - Pandora</label> <!-- Adicionando o nome da Musica -->
+                        <button onclick="playMusic('musica1')">PLAY</button> <!--Criando um botão para dar play/pause-->
+                    </div>
+
+                    <div class="card"> <!-- Criando a Divisão pro Card -->
+                        <img src="https://img.freepik.com/fotos-premium/uma-imagem-de-um-espaco-com-um-buraco-que-diz-fogo_902639-26546.jpg"
+                            alt=""> <!-- Adicionando uma Imagem -->
+                        <audio src="./musics/Storm Sound - Avalon.mp3" id="musica2"></audio> <!-- Criando um audio -->
+                        <label for="">StormSound - Avalon</label> <!-- Adicionando o nome da Musica -->
+                        <button onclick="playMusic('musica2')">PLAY</button> <!--Criando um botão para dar play/pause-->
+                    </div>
+
+                    <div class="card"> <!-- Criando a Divisão pro Card -->
+                        <img src="https://img.freepik.com/fotos-premium/uma-bola-de-fogo-com-o-sol-atras-dela_853177-12260.jpg"
+                            alt=""> <!-- Adicionando uma Imagem -->
+                        <audio src="./musics/Alliance - Time Eater.mp3" id="musica3"></audio> <!-- Criando um audio -->
+                        <label for="">Alliance - Time Eater</label> <!-- Adicionando o nome da Musica -->
+                        <button onclick="playMusic('musica3')">PLAY</button> <!--Criando um botão para dar play/pause-->
+                    </div>
+
+                    <div class="card"> <!-- Criando a Divisão pro Card -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Espa%C3%A7o_Sideral.png" alt=""> <!-- Adicionando uma Imagem -->
+                        <audio src="./musics/Clemens Ruh - Interstellar.mp3" id="musica4"></audio> <!-- Criando um audio -->
+                        <label for="">Clemens - Interstellar</label> <!-- Adicionando o nome da Musica -->
+                        <button onclick="playMusic('musica4')">PLAY</button> <!--Criando um botão para dar play/pause-->
+                    </div>
+
+                    <div class="card"> <!-- Criando a Divisão pro Card -->
+                        <img src="https://img.freepik.com/fotos-premium/uma-imagem-de-um-buraco-negro-com-o-sol-brilhando-atraves-dele_428148-5.jpg?w=360"
+                            alt=""> <!-- Adicionando uma Imagem -->
+                        <audio src="./musics/Nordwise.mp3" id="musica5"></audio> <!-- Criando um audio -->
+                        <label for="">Nordwise - Eurasia</label> <!-- Adicionando o nome da Musica -->
+                        <button onclick="playMusic('musica5')">PLAY</button> <!--Criando um botão para dar play/pause-->
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+
+        <section class="plans"> <!-- Criando a Divisão pros Planos e formulario -->
+
+            <div class="plans" id="plans">  <!-- Criando a Divisão pros Planos -->
+                <a onclick="formulario('plan1')"> <!-- Adicionando uma ancorã junto o evento click-->
+                    <fieldset class="plan"> <!--criando um conjunto de campos -->
+                        <legend>PLANO GRATIS - R$ 0,00</legend> <!-- Adicionando uma legenda a o conjunto-->
+                        <ol id="plan1"> <!-- Criando uma Lista ordenada -->
+                            <li>❌ DESCONTO</li> <!-- Elemento da Lista -->
+                            <li>❌ SEM ANÚNCIO</li> <!-- Elemento da Lista -->
+                            <li>❌ CRIAR PLAYLIST</li> <!-- Elemento da Lista -->
+                            <li>❌ SEGUIR ARTISTAS</li> <!-- Elemento da Lista -->
+                            <li>✔️ MÚSICAS ILIMITADAS</li> <!-- Elemento da Lista -->
+                            <li>❌ ATÉ 6 CONTAS PREMIUM OU KIDS</li> <!-- Elemento da Lista -->
+                            <li>✔️ OUTROS DISPOSITIVOS (TV/ALEXA)</li> <!-- Elemento da Lista -->
+                            <li>❌ BAIXAR MUSICAS</li> <!-- Elemento da Lista -->
+                            <li>❌ OUVIR NA ORDEM QUE QUISER</li> <!-- Elemento da Lista -->
+                            <li>❌ ÁUDIO DE ALTA QUALIDADE</li> <!-- Elemento da Lista -->
+                            <li>❌ SHARE PLAY (CONTROLE AMIGOS)</li> <!-- Elemento da Lista -->
+                        </ol>
+                    </fieldset>
+                </a>
+
+                <a onclick="formulario('plan2')"> <!-- Adicionando uma ancorã junto o evento click-->
+                    <fieldset class="plan"> <!--criando um conjunto de campos -->
+                        <legend>PLANO PADRÃO - R$ 19,99</legend> <!-- Adicionando uma legenda a o conjunto-->
+                        <ol id="plan2"> <!-- Criando uma Lista ordenada -->
+                            <li>❌ DESCONTO</li> <!-- Elemento da Lista -->
+                            <li>✔️ SEM ANÚNCIO</li> <!-- Elemento da Lista -->
+                            <li>✔️ CRIAR PLAYLIST</li> <!-- Elemento da Lista -->
+                            <li>✔️ SEGUIR ARTISTAS</li> <!-- Elemento da Lista -->
+                            <li>✔️ MÚSICAS ILIMITADAS</li> <!-- Elemento da Lista --> 
+                            <li>❌ ATÉ 6 CONTAS PREMIUM OU KIDS</li> <!-- Elemento da Lista -->
+                            <li>✔️ OUTROS DISPOSITIVOS (TV/ALEXA)</li> <!-- Elemento da Lista -->
+                            <li>✔️ BAIXAR MUSICAS</li> <!-- Elemento da Lista -->
+                            <li>✔️ OUVIR NA ORDEM QUE QUISER</li> <!-- Elemento da Lista -->
+                            <li>✔️ ÁUDIO DE ALTA QUALIDADE</li> <!-- Elemento da Lista -->
+                            <li>✔️ SHARE PLAY (CONTROLE AMIGOS)</li> <!-- Elemento da Lista -->
+                        </ol>
+                    </fieldset>
+                </a>
+ 
+                <a onclick="formulario('plan3')"> <!-- Adicionando uma ancorã junto o evento click-->
+                    <fieldset class="plan"> <!--criando um conjunto de campos -->
+                        <legend>PLANO FAMÍLIA - R$ 49,99</legend> <!-- Adicionando uma legenda a o conjunto-->
+                        <ol id="plan3"> <!-- Criando uma Lista ordenada -->
+                            <li>❌ DESCONTO</li> <!-- Elemento da Lista -->
+                            <li>✔️ SEM ANÚNCIO</li> <!-- Elemento da Lista -->
+                            <li>✔️ CRIAR PLAYLIST</li> <!-- Elemento da Lista -->
+                            <li>✔️ SEGUIR ARTISTAS</li> <!-- Elemento da Lista -->
+                            <li>✔️ MÚSICAS ILIMITADAS</li> <!-- Elemento da Lista -->
+                            <li>✔️ ATÉ 6 CONTAS PREMIUM OU KIDS</li> <!-- Elemento da Lista -->
+                            <li>✔️ OUTROS DISPOSITIVOS (TV/ALEXA)</li> <!-- Elemento da Lista -->
+                            <li>✔️ BAIXAR MUSICAS</li> <!-- Elemento da Lista -->
+                            <li>✔️ OUVIR NA ORDEM QUE QUISER</li> <!-- Elemento da Lista -->
+                            <li>✔️ ÁUDIO DE ALTA QUALIDADE</li> <!-- Elemento da Lista -->
+                            <li>✔️ SHARE PLAY (CONTROLE AMIGOS)</li> <!-- Elemento da Lista -->
+                        </ol>
+                    </fieldset>
+                </a>
+
+                <a onclick="formulario('plan4')"> <!-- Adicionando uma ancorã junto o evento click-->
+                    <fieldset class="plan"> <!--criando um conjunto de campos -->
+                        <legend>PLANO UNIVERSITÁRIO - R$ 9,99</legend> <!-- Adicionando uma legenda a o conjunto-->
+                        <ol id="plan4"> <!-- Criando uma Lista ordenada -->
+                            <li>✔️ DESCONTO</li> <!-- Elemento da Lista -->
+                            <li>✔️ SEM ANÚNCIO</li> <!-- Elemento da Lista -->
+                            <li>✔️ CRIAR PLAYLIST</li> <!-- Elemento da Lista -->
+                            <li>✔️ SEGUIR ARTISTAS</li> <!-- Elemento da Lista -->
+                            <li>✔️ MÚSICAS ILIMITADAS</li> <!-- Elemento da Lista -->
+                            <li>❌ ATÉ 6 CONTAS PREMIUM OU KIDS</li> <!-- Elemento da Lista -->
+                            <li>✔️ OUTROS DISPOSITIVOS (TV/ALEXA)</li> <!-- Elemento da Lista -->
+                            <li>✔️ BAIXAR MUSICAS</li> <!-- Elemento da Lista -->
+                            <li>✔️ OUVIR NA ORDEM QUE QUISER</li> <!-- Elemento da Lista -->
+                            <li>✔️ ÁUDIO DE ALTA QUALIDADE</li> <!-- Elemento da Lista -->
+                            <li>✔️ SHARE PLAY (CONTROLE AMIGOS)</li> <!-- Elemento da Lista -->
+                        </ol>
+                    </fieldset>
+                </a>
+            </div>
+
+            <div class="form" id="form"> <!-- Criando a divisão para o formulario -->
+                <form action=""> <!-- Criando o Formulario -->
+
+                    <label>Nome:</label> <!-- Adicionando o nome do campo -->
+                    <div class="inputForm">
+                        <input type="text" class="input" required> <!-- Crando o campo para escrever -->
+                    </div>
+
+                    <label>Telefone: </label> <!-- Adicionando o nome do campo -->
+                    <div class="inputForm"> 
+                        <input type="tel" class="input" oninput="formatarTelefone(this)" maxlength="15" minlength="15"
+                            required> <!-- Crando o campo para escrever -->
+                    </div>
+
+                    <label>Nascimento:</label> <!-- Adicionando o nome do campo -->
+                    <div class="inputForm">
+                        <input type="datetime" oninput="formatarData(this)" class="input" required> <!-- Crando o campo para escrever -->
+                    </div>
+
+                    <label>Endereço: </label> <!-- Adicionando o nome do campo -->
+                    <div class="inputForm">
+                        <input type="text" class="input" required> <!-- Crando o campo para escrever -->
+                    </div> 
+
+                    <label>Email:</label> <!-- Adicionando o nome do campo -->
+                    <div class="inputForm">
+                        <input type="email" class="input" required> <!-- Crando o campo para escrever -->
+                    </div>
+
+                    <label>Senha:</label> <!-- Adicionando o nome do campo -->
+                    <div class="inputForm">
+                        <input type="password" class="input" maxlength="15" minlength="4" required> <!-- Crando o campo para escrever -->
+                    </div>
+
+                    <br>
+
+                    <button type="submit">ASSINAR</button> <!-- botão para enviar -->
+                    <button type="reset" onclick="formulario()">CANCELAR</button> <!-- Botão para Cancelar -->
+                </form>
+
+                <fieldset class="selectPlan"> <!--criando um conjunto de campos -->
+                    <legend>INFORMAÇÕES</legend> <!-- Adicionando uma legenda a o conjunto-->
+                    <h2>PLANO ESCOLHIDO CONTÉM:</h2> <!-- Adicionando um titulo 2-->
+                    <div id="selectPlan"></div> <!-- pegando as informações sobre o plano-->
+                </fieldset>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <ul>
+            <li>Andrey Cadmo</li>
+            <li>Nicolas Jeffery</li>
+        </ul>
+        &copy; TODOS OS DIREITOS RESERVADOS
+        <img src="./assets/logo.png" alt="">
+    </footer>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>

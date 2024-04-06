@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "font-astroSong";
+    src: url(./assets/A-Space\ Bold\ Demo.otf);
+}
+
+@media screen and (orientation: landscape) {
+    body::before {
+        background-image: url(https://th.bing.com/th/id/R.1d87bd55905b73141e85e5baca43be48?rik=meWXA6JwNmYkRQ&pid=ImgRaw&r=0);
+        background-size: 100%;
+        filter: blur(0.3vw);
+    }
+
+    .about h2 {
+        font-size: 1.4vw;
+    }
+
+    .about h3 {
+        font-size: 1.2vw;
+    }
+
+    .about h1 {
+        font-size: 2.5vw;
+    }
+
+    .card {
+        width: 15vw;
+        height: 20vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        font-size: 1.5vw;
+        gap: 0.8vw;
+    }
+
+    .card button {
+        font-size: 1vw;
+        width: 15vw;
+        border-radius: 1vw;
+    }
+
+    .card img {
+        width: 15vw;
+        height: 15vw;
+        border-radius: 1.5vw;
+    }
+
+    fieldset {
+        border-radius: 1vw;
+    }
+
+    .artistics {
+        gap: 2vw;
+    }
+
+    .demo {
+        font-size: 2vw;
+    }
+
+    .plan legend {
+        font-size: 1.2vw;
+    }
+
+    ul,
+    ol {
+        font-size: 1.19vw;
+    }
+
+    .plans {
+        gap: 0.5vw;
+    }
+
+    footer {
+        font-size: 1vw;
+    }
+
+    footer img {
+        width: 5vw;
+    }
+
+    .form {
+        width: 95vw;
+        gap: 0.3vw;
+        padding: 2vw 0 2vw 8vw;
+        border-radius: 1vw;
+    }
+    .selectPlan {
+        margin: 1vw 1vw 1vw 6vw;
+    }
+    .form label {
+        font-size: 1.4vw;
+    }
+    .form input {
+        width: 20vw;
+        height: 2vw;
+        font-size: 1.2vw;
+    }
+    .form button {
+        padding: 0.5vw;
+        font-size: 1vw;
+        width: 10.2vw;
+    }
+}
+
+@media screen and (orientation: portrait),
+(max-width: 780px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    body::before {
+        background-image: url(https://i.pinimg.com/736x/59/63/cd/5963cd35d2a3b3a1997f598cf07d4563.jpg);
+        background-size: 120%;
+        filter: blur(1vw);
+    }
+
+    .intro img {
+        display: none;
+    }
+
+    .about h2 {
+        font-size: 5vw;
+    }
+
+    .about h3 {
+        font-size: 4vw;
+    }
+
+    .about h1 {
+        font-size: 6vw;
+    }
+
+    .card {
+        width: 75vw;
+        height: 105vw;
+        padding: 2vw;
+        border-radius: 3vw;
+        font-size: 7vw;
+        gap: 6vw;
+    }
+
+    .card button {
+        font-size: 8vw;
+        width: 70vw;
+        border-radius: 4vw;
+    }
+
+    .card img {
+        width: 70vw;
+        height: 70vw;
+        border-radius: 4vw;
+    }
+
+    fieldset {
+        border-radius: 3vw;
+    }
+
+    .artistics {
+        gap: 5vw;
+    }
+
+    .demo {
+        font-size: 6vw;
+    }
+
+    .plan legend {
+        font-size: 5.5vw;
+    }
+
+    ul,
+    ol {
+        font-size: 5vw;
+    }
+
+    .plans {
+        gap: 8vw;
+    }
+
+    footer {
+        flex-direction: column;
+        font-size: 4.5vw;
+    }
+
+    footer img {
+        width: 15vw;
+    }
+
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+        gap: 10vw;
+        padding: 6vw 2vw;
+        border-radius: 1vw;
+    }
+    .form label {
+        font-size: 5vw;
+    }
+    .form input {
+        width: 90vw;
+        height: 10vw;
+        font-size: 6vw;
+    }
+    .selectPlan {
+        margin: 0;
+    }
+    .selectPlan legend {
+        font-size: 6vw;
+    }
+    .form button {
+        padding: 0.5vw;
+        font-size: 6vw;
+        width: 45.5vw;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 0.3vw;
+    background: #656566;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(161, 163, 163);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus-visible {
+    -webkit-box-shadow: none !important;
+    transition: background-color 5000s ease-in-out 0s !important;
+}
+
+
+body {
+    margin: 0;
+    background-color: #656566;
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    position: relative;
+    user-select: none;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+
+
+.intro {
+    display: flex;
+    padding: 5vw 2vw;
+    gap: 10vw;
+    justify-content: space-between;
+}
+
+.intro img {
+    width: 40vw;
+}
+
+.about {
+    padding: 2vw;
+    border-radius: 1vw;
+    background-color: rgba(75, 75, 77, 0.4);
+}
+
+.about h1 {
+    font-family: "font-astroSong";
+}
+
+.about strong {
+    font-family: "font-astroSong";
+}
+
+.artistics-content {
+    padding: 6vw 1vw;
+}
+
+.artistics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+    background-color: rgb(199, 198, 197);
+}
+
+.card button {
+    font-weight: bolder;
+}
+
+.demo {
+    margin-top: 6vw;
+    text-align: center;
+}
+
+fieldset {
+    user-select: none;
+    background-color: rgba(75, 75, 77, 0.4);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw;
+    background-color: #252525;
+}
+
+
+.plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 6vw 1vw;
+}
+
+.plan {
+    cursor: pointer;
+    padding: 0.5vw;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+    color: white;
+}
+
+.form {
+    display: none;
+    background-color: rgba(75, 75, 77, 0.4);
+    user-select: none;
+}
+
+.form label {
+    font-weight: bolder;
+}
+
+.form input {
+    background-color: rgba(195, 195, 197, 0.4);
+    color: black;
+    border-radius: 0.5vw;
+}
+
+.form button {
+    font-weight: bolder;
+    background-color: rgba(195, 195, 197, 0.4);
+}
+
+.selectPlan {
+    flex: 1;
+}
