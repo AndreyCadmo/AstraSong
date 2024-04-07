@@ -5,7 +5,9 @@ WebSite desenvolvido para um projeto da Faculdade para apresentar os nosso conhe
 
 ### 🌎 Veja o resultado!
 
-Acesse o <a href="https://astrasong.vercel.app/">Website</a> e veja o resultado, aproveite e escute um desses artistas.
+Acesse o <a href="https://astrasong.vercel.app/">Website</a> e veja o resultado. <br><br>
+<strong>Obs:</strong> Site marcado como Perigoso por ter um formulário pedindo Nome, telefone, Nascimento, Endereço, Email e Senha. <br>
+O Site não salva <strong>NENHUMA</strong> informação, mas para sua segurança não forneça dados verdadeiros.
 
 ### 🎭 Artistas & Sons
 
