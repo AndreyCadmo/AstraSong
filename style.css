@@ -372,3 +372,30 @@ a {
 .selectPlan {
     flex: 1;
 }
+
+.security {
+    display: flex;
+    text-align: center;
+    position: fixed;
+    text-wrap: wrap;
+    flex-direction: column;
+    width: 100%; 
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(170, 170, 170, 0.911);
+}
+.security-content {
+    padding: 6vw;
+}
+
+.security-content h1 {
+    color: rgba(85, 8, 8, 0.788);
+}
+
+.security-buttons button {
+    padding: 1vw 6vw;
+    background-color: rgba(185, 185, 185, 0.521);
+    color: white;
+    font-weight: bold;
+}

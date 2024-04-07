@@ -76,3 +76,8 @@ function formulario(id) {
         }
     }
 }
+
+function security() {
+    const aba = document.getElementById('security')
+    aba.style.display = "none";
+}
