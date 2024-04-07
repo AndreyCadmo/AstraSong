@@ -180,43 +180,48 @@
             </div>
 
             <div class="form" id="form"> <!-- Criando a divisão para o formulario -->
-                <form action="#"> <!-- Criando o Formulario -->
-
-                    <label>Nome:</label> <!-- Adicionando o nome do campo -->
+                <form id="meuFormulario" action="#">
+                    <label>Nome:</label>
                     <div class="inputForm">
-                        <input type="text" class="input" required> <!-- Crando o campo para escrever -->
+                        <input type="text" id="nome" class="input" required>
+                        <div id="nomeError" class="error"></div> <!-- Mensagem de erro para o campo Nome -->
                     </div>
-
-                    <label>Telefone: </label> <!-- Adicionando o nome do campo -->
+                
+                    <label>Telefone:</label>
                     <div class="inputForm"> 
-                        <input type="tel" class="input" oninput="formatarTelefone(this)" maxlength="15" minlength="15"
-                            required> <!-- Crando o campo para escrever -->
+                        <input type="tel" id="telefone" class="input" oninput="formatarTelefone(this)" maxlength="15" minlength="15" required>
+                        <div id="telefoneError" class="error"></div> <!-- Mensagem de erro para o campo Telefone -->
                     </div>
-
-                    <label>Nascimento:</label> <!-- Adicionando o nome do campo -->
+                
+                    <label>Nascimento:</label>
                     <div class="inputForm">
-                        <input type="datetime" oninput="formatarData(this)" class="input" required> <!-- Crando o campo para escrever -->
+                        <input type="datetime" id="nascimento" oninput="formatarData(this)" class="input" required>
+                        <div id="nascimentoError" class="error"></div> <!-- Mensagem de erro para o campo Nascimento -->
                     </div>
-
-                    <label>Endereço: </label> <!-- Adicionando o nome do campo -->
+                
+                    <label>Endereço:</label>
                     <div class="inputForm">
-                        <input type="text" class="input" required> <!-- Crando o campo para escrever -->
+                        <input type="text" id="endereco" class="input" required>
+                        <div id="enderecoError" class="error"></div> <!-- Mensagem de erro para o campo Endereço -->
                     </div> 
-
-                    <label>Email:</label> <!-- Adicionando o nome do campo -->
+                
+                    <label>Email:</label>
                     <div class="inputForm">
-                        <input type="email" class="input" required> <!-- Crando o campo para escrever -->
+                        <input type="email" id="email" class="input" required>
+                        <div id="emailError" class="error"></div> <!-- Mensagem de erro para o campo Email -->
                     </div>
-
-                    <label>Senha:</label> <!-- Adicionando o nome do campo -->
+                
+                    <label>Senha:</label>
                     <div class="inputForm">
-                        <input type="password" class="input" maxlength="15" minlength="4" required> <!-- Crando o campo para escrever -->
+                        <input type="password" id="senha" class="input" maxlength="15" minlength="4" required>
+                        <div id="senhaError" class="error"></div> <!-- Mensagem de erro para o campo Senha -->
                     </div>
-
+                
                     <br>
-
-                    <button type="submit">ASSINAR</button> <!-- botão para enviar -->
-                    <button type="reset" onclick="formulario()">CANCELAR</button> <!-- Botão para Cancelar -->
+                
+                    <button type="button" onclick="verificarPreenchimento()">ASSINAR</button>
+                    <button type="reset" onclick="formulario()">CANCELAR</button>
+                </form>
                 </form>
 
                 <fieldset class="selectPlan"> <!--criando um conjunto de campos -->

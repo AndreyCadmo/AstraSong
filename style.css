@@ -399,3 +399,9 @@ a {
     color: white;
     font-weight: bold;
 }
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 0.5vw;
+}

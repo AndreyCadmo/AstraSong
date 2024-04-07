@@ -81,3 +81,45 @@ function security() {
     const aba = document.getElementById('security')
     aba.style.display = "none";
 }
+
+function resetarFormulario() {
+    document.getElementById('meuFormulario').reset();
+    location.reload()
+}
+
+function verificarPreenchimento() {
+    var nome = document.getElementById('nome').value;
+    var telefone = document.getElementById('telefone').value;
+    var nascimento = document.getElementById('nascimento').value;
+    var endereco = document.getElementById('endereco').value;
+    var email = document.getElementById('email').value;
+    var senha = document.getElementById('senha').value;
+
+    document.getElementById('nomeError').innerHTML = '';
+    document.getElementById('telefoneError').innerHTML = '';
+    document.getElementById('nascimentoError').innerHTML = '';
+    document.getElementById('enderecoError').innerHTML = '';
+    document.getElementById('emailError').innerHTML = '';
+    document.getElementById('senhaError').innerHTML = '';
+
+    if (nome === '') {
+        document.getElementById('nomeError').innerHTML = 'Obrigatório preencher.';
+    }
+    if (telefone === '') {
+        document.getElementById('telefoneError').innerHTML = 'Obrigatório preencher.';
+    }
+    if (nascimento === '') {
+        document.getElementById('nascimentoError').innerHTML = 'Obrigatório preencher.';
+    }
+    if (endereco === '') {
+        document.getElementById('enderecoError').innerHTML = 'Obrigatório preencher.';
+    }
+    if (email === '') {
+        document.getElementById('emailError').innerHTML = 'Obrigatório preencher.';
+    }
+    if (senha === '') {
+        document.getElementById('senhaError').innerHTML = 'Obrigatório preencher.';
+    } else {
+        resetarFormulario()
+    }
+}
