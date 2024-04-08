@@ -6,8 +6,9 @@ WebSite desenvolvido para um projeto da Faculdade para apresentar os nosso conhe
 ### 🌎 Veja o resultado!
 
 Acesse o <a href="https://astrasong.vercel.app/">Website</a> e veja o resultado. <br><br>
-<strong>Obs:</strong> Site marcado como Perigoso por ter um formulário pedindo Nome, telefone, Nascimento, Endereço, Email e Senha. <br>
-O Site não salva <strong>NENHUMA</strong> informação, mas para sua segurança não forneça dados verdadeiros.
+
+Revisão feita e o site não é mais considerado perigoso.
+![Search Console](./assets/image.png)
 
 ### 🎭 Artistas & Sons
 
@@ -21,37 +22,14 @@ O Site não salva <strong>NENHUMA</strong> informação, mas para sua segurança
 
 ![2024-04-0611-33-37-ezgif com-video-to-gif-converter](https://github.com/AndreyCadmo/AstraSong/assets/49537908/fccbe544-65db-43bc-8755-5d88751c8f6f)
 
+![website](./assets/site.png)
+
 ### ⚒ Linguagens e Ferramentas 
 <div display-flex >
 <img width="40px" hspace="2px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" title = "HTML5" width="40" height="40" />
 <img width="40px" hspace="2px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" title = "CSS3" width="40" height="40"/>
 <img width="40px" hspace="2px" loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title = "JAVASCRIPT" width="40" height="40"/>
 </div>
-
-### 💾 Rodando localmente
-
-Clone o projeto
-
-```bash
-  git clone https://github.com/AndreyCadmo/AstraSong.git
-```
-
-Entre no diretório do projeto
-
-```bash
-  cd AstraSong
-```
-
-Instale as dependências
-
-```bash
-  npm install
-
-```
-Inicie o servidor live server.
-
-<br>
-
 
 ### 🙍‍♂️ Autores
 
